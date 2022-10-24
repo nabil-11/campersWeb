@@ -1,0 +1,55 @@
+<div class="modal modal-signin position-fixed d-block"  role="dialog" id="modalSignin">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+          <h1 class="fw-bold mb-0 fs-2">Sign up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body p-5 pt-0">
+    <form  [formGroup]="signupForm" (ngSubmit)="onSubmit()" >
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="email" formControlName="email" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+       <div class="form-floating mb-3">
+                <input type="tel" class="form-control rounded-3" id="phone"  placeholder="name@example.com">
+                <label for="floatingInput">Phone</label>
+              </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="full name" placeholder="Password">
+                <label for="floatingPassword">full name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="floatingPassword"   placeholder="Password">
+                <label for="floatingPassword">virtual name</label>
+              </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="password" formControlName="password" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="cpassword"  placeholder="Password">
+                <label for="floatingPassword">Confirm password</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="date" class="form-control rounded-3" id="date_birth" placeholder="Password">
+                <label for="floatingPassword"> Date of Birth</label>
+              </div>
+              <div class="form-floating mb-3 text-muted">
+                  <select class="form-select">
+                    <option > Women </option>
+                    <option  selected>Men</option>
+                  </select>
+                  <label for="floatingPassword">Genre</label>
+              </div>
+         
+
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" >Sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

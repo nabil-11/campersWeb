@@ -1,0 +1,13 @@
+<app-carousel></app-carousel>
+<div class="row w-100  p-0 m-0">
+  <div class="col-md-3 px-3 text-center d-none d-md-inline " >
+    <app-card-event *ngFor="let item of events"></app-card-event>
+  </div>
+  <div class="col p-0 m-0 ">
+    <app-list-items></app-list-items>
+  </div>
+
+</div>
+<app-top-event></app-top-event>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
